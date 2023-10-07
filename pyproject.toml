@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "adv-mla-assignment2"
+version = "0.1.0"
+description = "Utilizing poetry for managing dependencies for assignment task 2."
+authors = ["Monali"]
+readme = "README.md"
+packages = [{include = "adv_mla_assignment2"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jupyterlab = "3.6.3"
+pandas = "2.0.1"
+scikit-learn = "1.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
