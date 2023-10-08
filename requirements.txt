@@ -1,0 +1,13 @@
+# Stating all the necessary below libraries that would be executed by API
+# Libraries -> fastapi: API for models servicing, uvicorn: Webserver, joblib: to load the trained regressor artefact
+numpy==1.25.2
+pandas==1.5.3
+scikit-learn==1.2.2
+pickleshare==0.7.5
+plotly==5.17.0
+cmdstanpy==1.2.0
+fastapi==0.88.0
+uvicorn==0.20.0
+joblib==1.2.0
+prophet==1.1.4
+xgboost==2.0.0
