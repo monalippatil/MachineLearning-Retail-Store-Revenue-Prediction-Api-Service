@@ -1,7 +1,6 @@
-Machine Learning for Retail Chains: Developing Predictive and
-Forecasting Models and Api for Retail Revenue.
+## **Machine Learning for Retail Chains: Developing Predictive and Forecasting Models and Api for Retail Revenue.**
 
-**<u>Project Overview</u>**
+### **<u>Project Overview</u>**
 
 The project involves working with an American retail chain operating
 across California (CA), Texas (TX), and Wisconsin (WI). This retailer
@@ -19,7 +18,7 @@ revenue across all stores and items for the next seven days.
 These models will help optimize inventory, pricing, and decision-making
 for our retail partner.
 
-**<u>Business Problem:</u>**
+### **<u>Business Problem</u>**
 
 The primary business problems that the machine learning models aim to
 address are:
@@ -36,7 +35,7 @@ allocation.
 The machine learning models aim to address these business challenges by
 providing precise predictions and forecasts.
 
-**Tasks**
+### **Tasks:**
 
 Below 2 models are built for this task.
 
@@ -44,7 +43,7 @@ Below 2 models are built for this task.
 
 -   **Forecasting Prophet Model**
 
-**<u>Datasets</u>**
+### **<u>Datasets</u>**
 
 The dataset consists of historical sales and revenue data from an.
 American based retail business. It includes information on various
@@ -69,7 +68,7 @@ style="width:6.27611in;height:2.63083in" />
 
 -   Items Price per Week: Weekly pricing data for each item.
 
-**Data Limitations**:
+**<u>Data Limitations:</u>**
 
 -   **Lack of Metadata**: The dataset lacks metadata or detailed
     descriptions of variables and their meanings. This limitation
@@ -98,7 +97,7 @@ Addressing these limitations through appropriate data preprocessing,
 feature selection, and model training techniques is crucial for building
 a robust and reliable revenue prediction model.
 
-**<u>Data Preparation</u>**
+### **<u>Data Preparation</u>**
 
 > To ensure the quality of the data for modelling, conducted the below
 > activities.
@@ -250,7 +249,7 @@ To construct the revenue forecasting model using the Prophet time-series
 model, aggregated the revenue figures based on the date, encompassing
 all items, stores, and states.
 
-**<u>Modelling</u>**
+## **<u>Modelling</u>**
 
 As a part of the learning process, developed and trained the following
 regression and time-series models.
@@ -298,7 +297,7 @@ style="width:6.65491in;height:4.35823in" />
 > those months, utilizing Prophet's holiday feature which is a Pandas
 > dataframe containing the holidays and their respective date.
 
-**<u>Evaluation:</u>**
+### **<u>Evaluation:</u>**
 
 <img src="./attachments/projectreadme/media/image9.png"
 style="width:6.442in;height:5.78875in" />
@@ -381,9 +380,9 @@ pipeline is constructed using the XGBoost model, while for forecasting,
 the trained Prophet algorithm was employed as part of the forecasting
 service via an API.
 
-**<u>Models Summary and Business Impact and Benefits:</u>**
+### **<u>Models Summary and Business Impact and Benefits:</u>**
 
--   Predictive Model
+-   **Predictive Model**
 
 The XGBoost Regressor model from experiment 1 outperforms the Linear
 Regression model although it also exhibits overfitting issues. This
@@ -404,7 +403,7 @@ inventory management efficiency, suboptimal pricing decisions, affecting
 profitability and inefficiencies in staffing and supply chain
 management.
 
--   Forecasting Model
+-   **Forecasting Model**
 
 <img src="./attachments/projectreadme/media/image12.png"
 style="width:6.43396in;height:2.77292in" />
@@ -447,7 +446,7 @@ Below are some essential recommendations for the retail business.
 -   Ethical AI and Fairness: Establish guidelines for the responsible
     use of predictive models, including ethical considerations.
 
-**<u>Data Privacy and Ethical Concerns:</u>**
+### **<u>Data Privacy and Ethical Concerns:</u>**
 
 -   As the dataset was procured from a university portal for academic
     purposes, there were no apprehensions related to copyright or
@@ -468,7 +467,7 @@ Below are some essential recommendations for the retail business.
     data misuse. Therefore, implement strong data encryption, access
     controls, and anonymization techniques.
 
-**<u>Conclusion</u>**
+### **<u>Conclusion</u>**
 
 In conclusion, this project aimed to develop predictive (XGBoost) and
 forecasting (Phophet) models for sales revenue in a retail setting.
@@ -487,4 +486,4 @@ hyperparameters like max\_depth, subsample, max\_leaves etc. to improve
 their predictive performance for better model generalization. And
 explore other time series models namely SARIMA.
 
-**Prerequisites**
+### **Prerequisites**
