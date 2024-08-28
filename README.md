@@ -55,19 +55,6 @@ inventory management and pricing strategies.
 <img src="./attachments/projectreadme/media/image1.jpeg"
 style="width:6.27611in;height:2.63083in" />
 
--   Training Data: Contains historical sales data for training the
-    models.
-
--   Evaluation Data: Used for evaluating model performance.
-
--   Calendar: Includes dates and corresponding events that may influence
-    sales.
-
--   Events: Lists special events (e.g., holidays, promotions) that could
-    impact sales.
-
--   Items Price per Week: Weekly pricing data for each item.
-
 **<u>Data Limitations:</u>**
 
 -   **Lack of Metadata**: The dataset lacks metadata or detailed
