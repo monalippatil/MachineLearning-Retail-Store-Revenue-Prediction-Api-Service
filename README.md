@@ -114,12 +114,8 @@ Additionally, the 'd\_\*' column was relabeled as 'dayofsale,' and the 'sold ite
 
 > <img src="./attachments/projectreadme/media/image3.jpeg"
 > style="width:5.96096in;height:0.75906in" />
->
-> Combining data from various sources into a single data frame is a
-> fundamental step in data preprocessing for modelling. It ensures data
-> consistency, enables feature engineering, and simplifies the overall
-> analysis process, ultimately contributing to better decision-making
-> and model performance.
+
+Combining data from various sources into a single data frame is a fundamental step in data preprocessing for modelling. It ensures data consistency, enables feature engineering, and simplifies the overall analysis process, ultimately contributing to better decision-making and model performance.
 
 -   **Feature Engineering**.
 
@@ -149,20 +145,11 @@ Additionally, the 'd\_\*' column was relabeled as 'dayofsale,' and the 'sold ite
 
 -   **Selecting appropriate features**.
 
-> Features selected: 'item\_id', 'store\_id', 'date', 'event\_name',
-> 'event\_type', 'revenue'
->
-> To build a machine learning predictive model, above specific features
-> were chosen. Due to the presence of duplicate columns after
-> aggregating the datasets, it resulted in the large dataset leading to
-> memory related issues. For instance, ‘store\_id’ field values (CA\_1,
-> WI\_2, TX\_9) already incorporates the ‘state\_id’ attribute values
-> (CA, WI, TX). Therefore, it's logical to choose pertinent features
-> that have generalized unique values and avoid duplicates.
->
-> Additionally, to address the memory challenges associated with
-> analyzing the extensive dataset, the above mentioned features were
-> chosen based on their relevance from a business perspective.
+Features selected: 'item\_id', 'store\_id', 'date', 'event\_name', 'event\_type', 'revenue'
+
+To build a machine learning predictive model, above specific features were chosen. Due to the presence of duplicate columns after aggregating the datasets, it resulted in the large dataset leading to memory related issues. For instance, ‘store\_id’ field values (CA\_1, WI\_2, TX\_9) already incorporates the ‘state\_id’ attribute values (CA, WI, TX). Therefore, it's logical to choose pertinent features that have generalized unique values and avoid duplicates.
+
+Additionally, to address the memory challenges associated with analyzing the extensive dataset, the above mentioned features were chosen based on their relevance from a business perspective.
 
 -   **Identifying and eliminating identifiers**.
 
@@ -196,8 +183,7 @@ dataset, mitigating memory-related challenges.
 
 -   **Handling and imputing missing values**.
 
-> After combining the datasets, missing values were identified in the
-> attributes.
+After combining the datasets, missing values were identified in the attributes.
 
 <table>
 <colgroup>
@@ -226,12 +212,9 @@ dataset, mitigating memory-related challenges.
 </tbody>
 </table>
 
-> To handle missing values in the 'event\_name' and 'event\_type'
-> features, 'None' was used as a replacement for the missing values.
->
-> For address missing values in the 'revenue' target feature, 0 was used
-> for imputation. This signifies days with no items sold and,
-> consequently, zero income.
+To handle missing values in the 'event\_name' and 'event\_type' features, 'None' was used as a replacement for the missing values.
+
+For address missing values in the 'revenue' target feature, 0 was used for imputation. This signifies days with no items sold and, consequently, zero income.
 
 -   **Aggregating the revenues based on the date across all items,
     stores, and states**.
@@ -243,7 +226,7 @@ To construct the revenue forecasting model using the Prophet time-series
 model, aggregated the revenue figures based on the date, encompassing
 all items, stores, and states.
 
-## **<u>Modelling</u>**
+### **<u>Modelling</u>**
 
 As a part of the learning process, developed and trained the following
 regression and time-series models.
@@ -277,19 +260,11 @@ style="width:6.31575in;height:2.36948in" />
 <img src="./attachments/projectreadme/media/image8.png"
 style="width:6.65491in;height:4.35823in" />
 
-> The charts above demonstrate periodic spikes in retail revenue in both
-> directions, with noticeable increases and declines occurring during
-> specific months of the year, following a recurring pattern at certain
-> intervals.
->
-> While these spikes could be attributed to various factors, we can
-> hypothesize that they may be related to long weekends, holidays, or
-> significant promotions that the company runs approximately every
-> quarter, potentially impacting the sales revenue.
->
-> To leverage this information for more accurate forecasting during
-> those months, utilizing Prophet's holiday feature which is a Pandas
-> dataframe containing the holidays and their respective date.
+The charts above demonstrate periodic spikes in retail revenue in both directions, with noticeable increases and declines occurring during specific months of the year, following a recurring pattern at certain intervals.
+
+While these spikes could be attributed to various factors, we can hypothesize that they may be related to long weekends, holidays, or significant promotions that the company runs approximately every quarter, potentially impacting the sales revenue.
+
+To leverage this information for more accurate forecasting during those months, utilizing Prophet's holiday feature which is a Pandas dataframe containing the holidays and their respective date.
 
 ### **<u>Evaluation:</u>**
 
@@ -298,14 +273,12 @@ style="width:6.442in;height:5.78875in" />
 
 **Results and Analysis:**
 
--   **Predictive
-    Model**<img src="./attachments/projectreadme/media/image10.png"
+-   **Predictive Model**
+    <img src="./attachments/projectreadme/media/image10.png"
     style="width:4.9532in;height:1.44833in" />
 
-> The baseline model has a MAS score of 4.3372 and an RMSE score of
-> 9.0484. This serves as a reference point for evaluating the other
-> models.
->
+The baseline model has a MAS score of 4.3372 and an RMSE score of 9.0484. This serves as a reference point for evaluating the other models.
+
 > Experiment 1: XGBoost Regressor
 
 -   The XGBoost Regressor algorithm achieves a lower MAS score (4.0605)
