@@ -266,12 +266,12 @@ While these spikes could be attributed to various factors, we can hypothesize th
 
 To leverage this information for more accurate forecasting during those months, utilizing Prophet's holiday feature which is a Pandas dataframe containing the holidays and their respective date.
 
-### **<u>Evaluation:</u>**
+## **<u>Evaluation:</u>**
 
 <img src="./attachments/projectreadme/media/image9.png"
 style="width:6.442in;height:5.78875in" />
 
-**Results and Analysis:**
+### **Results and Analysis:**
 
 -   **Predictive Model**
     <img src="./attachments/projectreadme/media/image10.png"
@@ -279,7 +279,7 @@ style="width:6.442in;height:5.78875in" />
 
 The baseline model has a MAS score of 4.3372 and an RMSE score of 9.0484. This serves as a reference point for evaluating the other models.
 
-> Experiment 1: XGBoost Regressor
+Experiment 1: XGBoost Regressor
 
 -   The XGBoost Regressor algorithm achieves a lower MAS score (4.0605)
     and RMSE score (8.7152) compared to the baseline on the training
@@ -292,7 +292,7 @@ The baseline model has a MAS score of 4.3372 and an RMSE score of 9.0484. This s
     is overfitting to the training dataset, as it struggles to
     generalize to unseen data.
 
-> Experiment 2: Linear Regression
+Experiment 2: Linear Regression
 
 -   The Linear Regression model has a MAS score of 4.2788 and an RMSE
     score of 9.0114 on the training dataset. It performs slightly worse
