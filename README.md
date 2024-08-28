@@ -99,22 +99,16 @@ a robust and reliable revenue prediction model.
 
 ### **<u>Data Preparation</u>**
 
-> To ensure the quality of the data for modelling, conducted the below
-> activities.
+To ensure the quality of the data for modelling, conducted the below activities.
 
 -   **Reshaping the training dataset and renaming the attributes**.
 
 <img src="./attachments/projectreadme/media/image2.jpeg"
 style="width:5.91718in;height:0.62125in" />
 
-> The above training dataset had columns named from d\_1 to d\_1541
-> representing the sold item volume for each day for distinct items from
-> 10 stores across 3 separate states. So, melt functionality was
-> utilized to reshape the data to improve attribute organization and for
-> more convenient and suitable data analysis and modelling task.
->
-> Additionally, the 'd\_\*' column was relabeled as 'dayofsale,' and the
-> 'sold item numbers' were renamed as 'volume.
+The above training dataset had columns named from d\_1 to d\_1541 representing the sold item volume for each day for distinct items from 10 stores across 3 separate states. So, melt functionality was utilized to reshape the data to improve attribute organization and for more convenient and suitable data analysis and modelling task.
+
+Additionally, the 'd\_\*' column was relabeled as 'dayofsale,' and the 'sold item numbers' were renamed as 'volume.
 
 -   **Combining the individual datasets into a single dataset**.
 
