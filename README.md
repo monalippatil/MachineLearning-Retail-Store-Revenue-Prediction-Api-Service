@@ -478,7 +478,7 @@ Project Organization
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
     ├── notebooks          <- Jupyter notebooks specified below. 
-    │   │  				   <- MachineLearning-week2_ExploratoryDataAnalysis(EDA).ipynb
+    │   │  				 <- MachineLearning-week2_ExploratoryDataAnalysis(EDA).ipynb
     │   ├── predictive     <- MachineLearning_PredictiveModel_XGBoost.ipynb
     │   └── forecasting    <- MachineLearning_ForecastingModel_Phophet.ipynb
     │                                
