@@ -252,7 +252,7 @@ model in an operational environment.
 <img src="./attachments/projectreadme/media/image6.jpeg"
 style="width:7.11116in;height:3.06667in" />
 
-> Employing Holiday Construct of the Phophet algorithm.
+Employing Holiday Construct of the Phophet algorithm.
 
 <img src="./attachments/projectreadme/media/image7.png"
 style="width:6.31575in;height:2.36948in" />
